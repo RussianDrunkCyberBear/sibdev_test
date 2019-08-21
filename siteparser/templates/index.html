@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SiteParser</title>
+</head>
+<body>
+<textarea readonly>
+{% for item in db_items %}
+дата {{item.f_start_time}}(utc): {{item.url}} --- {% if item.status_success %}OK{% else %}URL UNAVAILABLE{% endif %}
+{% endfor %}
+</textarea>
+<textarea readonly>
+{% for item in db_items %}
+{{item.url}}{% if item.response_title != "" %} - TITLE: {{item.response_title}}{% endif %}{% if item.response_charset != "" %} | CHARSET:{{item.response_charset}}{% endif %}{% if item.response_h1 != "" %} | H1: {{item.response_h1}}{% endif %}
+{% endfor %}
+</textarea>
+</body>
+</html>
+
+<style type="text/css">
+	textarea {
+		width: 100%;
+		height: 50vh;
+	}
+</style>
