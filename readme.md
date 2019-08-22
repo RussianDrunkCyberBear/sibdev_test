@@ -1,30 +1,30 @@
 # overview
 
-Test exersise. Simple site parser with database and choosable time dealay for url request
-tested with python 3.7.4
-uses sqlite wich installing with django by defaul
+Test exersise. Simple site parser with database and choosable time dealay for url request<br />
+tested with python 3.7.4<br />
+uses sqlite wich installing with django by defaul<br />
 
 
 
 # for using with virtual enviroment
 
-pip install virtualenv
-python -m venv env
+pip install virtualenv<br />
+python -m venv env<br />
 	
-linux: source env/bin/activate
-or
-win: env\Scripts\activate
+linux: source env/bin/activate<br />
+or<br />
+win: env\Scripts\activate<br />
 
 
 
 # installation
 
-pip install -r requirements.txt
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser 	# admin login password create
+pip install -r requirements.txt<br />
+python manage.py makemigrations<br />
+python manage.py migrate<br />
+python manage.py createsuperuser 	# admin login password create<br />
 
 
 
 # start server
-python manage.py runserver
+python manage.py runserver<br />
